@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Monitor</string>
+    <string name="action_preferences">Preferences</string>
+
+    <string name="error">Error</string>
+    <string name="error_title">Error</string>
+    <string name="success_title">Success</string>
+
+    <!-- Home fragment -->
+    <string name="home_status">Status:</string>
+    <string name="home_last_movement">Last movement:</string>
+    <string name="home_last_fall">Last fall:</string>
+    <string name="home_last_medicine">Last medicine:</string>
+    <string name="home_next_medicine">Next medicine:</string>
+
+    <!-- Preferences fragment -->
+    <string name="preferences_title">Preferences</string>
+    <string name="preferences_medicine_time">Medicine time:</string>
+    <string name="preferences_sleep_time">Sleep time:</string>
+    <string name="preferences_to">to</string>
+    <string name="preferences_update_button">Update</string>
+    <string name="preferences_wrong_time_format">The time input is in the wrong format.\nUse hh:mm.</string>
+    <string name="preferences_success_update">Preferences Updated!</string>
+    <string name="preferences_connection_error">Some connection error occured!</string>
+    <string name="preferences_json_error">JSON parsing error!</string>
+</resources>

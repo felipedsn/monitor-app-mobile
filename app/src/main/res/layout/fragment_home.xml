@@ -44,7 +44,7 @@
             android:id="@+id/next_medicine_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/home_next_medicine"
+            android:text="@string/home_medicine_time"
             android:textSize="20sp"
             android:layout_below="@+id/last_medicine_label"
             android:layout_alignEnd="@+id/last_medicine_label"

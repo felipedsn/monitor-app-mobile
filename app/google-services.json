@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "777225794693",
+    "firebase_url": "https://monitor-app-project.firebaseio.com",
+    "project_id": "monitor-app-project",
+    "storage_bucket": "monitor-app-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777225794693:android:e4f8c54f70ca7e1e",
+        "android_client_info": {
+          "package_name": "com.fasno.monitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777225794693-609pv61f33nlerbskijc5m42935obb00.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fasno.monitor",
+            "certificate_hash": "177e4bb2f878b77e1123649e5318685764284e3f"
+          }
+        },
+        {
+          "client_id": "777225794693-a27pkd610a9nu6tbsnsadsdid562ubd5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7WFBpa1j6CBqVx4VvhHJdpGxS35UqlRE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777225794693-a27pkd610a9nu6tbsnsadsdid562ubd5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

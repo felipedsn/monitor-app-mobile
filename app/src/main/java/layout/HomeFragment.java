@@ -1,8 +1,6 @@
 package layout;
 
-import android.content.Context;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -31,17 +29,17 @@ public class HomeFragment extends Fragment {
         getActivity().setTitle("Monitor");
         ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 
-        TextView statusValue = (TextView) view.findViewById(R.id.status_value);
-        TextView lastMovementValue = (TextView) view.findViewById(R.id.last_movement_value);
-        //TextView lastMedicine = (TextView) view.findViewById(R.id.last_medicine_value);
-        TextView nextMedicineValue = (TextView) view.findViewById(R.id.next_medicine_value);
-        TextView lastFallValue = (TextView) view.findViewById(R.id.last_fall_value);
+        TextView statusValue = view.findViewById(R.id.status_value);
+        TextView lastMovementValue = view.findViewById(R.id.last_movement_value);
+        TextView lastMedicine = view.findViewById(R.id.last_medicine_value);
+        TextView medicineTime = view.findViewById(R.id.medicine_time_value);
+        TextView lastFallValue = view.findViewById(R.id.last_fall_value);
 
-        callGetMethod(statusValue, CONSTANTS.PREFERENCES_ENDPOINT, "medicine");
-        callGetMethod(lastMovementValue, CONSTANTS.PREFERENCES_ENDPOINT, "medicine");
-        //callGetMethod(lastMedicine, CONSTANTS.PREFERENCES_ENDPOINT, "medicine");
-        callGetMethod(nextMedicineValue, CONSTANTS.PREFERENCES_ENDPOINT, "medicine");
-        callGetMethod(lastFallValue, CONSTANTS.PREFERENCES_ENDPOINT, "medicine");
+        callGetMethod(statusValue, CONSTANTS.HOME_STATUS_ENDPOINT, "status");
+        callGetMethod(lastMovementValue, CONSTANTS.LAST_MOVEMENT_ENDPOINT, "time");
+        callGetMethod(lastMedicine, CONSTANTS.LAST_MEDICINE_ENDPOINT, "time");
+        callGetMethod(medicineTime, CONSTANTS.MEDICINE_TIME_ENDPOINT, "time");
+        callGetMethod(lastFallValue, CONSTANTS.LAST_FALL_ENDPOINT, "time");
 
         return view;
     }

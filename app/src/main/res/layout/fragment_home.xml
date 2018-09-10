@@ -13,52 +13,52 @@
             android:id="@+id/status_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/last_movement_label"
+            android:layout_alignParentTop="true"
             android:layout_marginTop="40dp"
             android:text="@string/home_status"
-            android:textSize="20sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignEnd="@+id/last_movement_label" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/last_movement_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/status_label"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="24dp"
             android:text="@string/home_last_movement"
-            android:textSize="20sp"
-            android:layout_below="@+id/status_label"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="15dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/last_medicine_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/last_movement_label"
+            android:layout_below="@+id/last_movement_label"
             android:layout_marginTop="24dp"
             android:text="@string/home_last_medicine"
-            android:textSize="20sp"
-            android:layout_below="@+id/last_movement_label"
-            android:layout_alignEnd="@+id/last_movement_label" />
+            android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/next_medicine_label"
+            android:id="@+id/medicine_time_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/home_medicine_time"
-            android:textSize="20sp"
-            android:layout_below="@+id/last_medicine_label"
             android:layout_alignEnd="@+id/last_medicine_label"
-            android:layout_marginTop="24dp" />
+            android:layout_below="@+id/last_medicine_label"
+            android:layout_marginTop="24dp"
+            android:text="@string/home_medicine_time"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/last_fall_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/medicine_time_label"
+            android:layout_below="@+id/medicine_time_label"
             android:layout_marginTop="24dp"
             android:text="@string/home_last_fall"
-            android:textSize="20sp"
-            android:layout_below="@+id/next_medicine_label"
-            android:layout_alignEnd="@+id/next_medicine_label" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/status_value"
@@ -86,15 +86,14 @@
             android:layout_alignBaseline="@+id/last_medicine_label"
             android:layout_alignBottom="@+id/last_medicine_label"
             android:layout_alignStart="@+id/last_movement_value"
-            android:text="Nov 21, 2017 03:04"
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/next_medicine_value"
+            android:id="@+id/medicine_time_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/next_medicine_label"
-            android:layout_alignBottom="@+id/next_medicine_label"
+            android:layout_alignBaseline="@+id/medicine_time_label"
+            android:layout_alignBottom="@+id/medicine_time_label"
             android:layout_alignStart="@+id/last_medicine_value"
             android:textSize="20sp" />
 
@@ -104,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/last_fall_label"
             android:layout_alignBottom="@+id/last_fall_label"
-            android:layout_alignStart="@+id/next_medicine_value"
+            android:layout_alignStart="@+id/medicine_time_value"
             android:textSize="20sp" />
 
     </RelativeLayout>

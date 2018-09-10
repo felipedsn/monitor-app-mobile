@@ -27,7 +27,7 @@ public class RestConnector {
                 getRequestQueue();
 
         JsonObjectRequest jsObjRequest = new JsonObjectRequest
-                (Request.Method.GET, url, (String)null, new Response.Listener<JSONObject>() {
+                (url, null, new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
                         try {

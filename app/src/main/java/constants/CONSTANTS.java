@@ -2,7 +2,8 @@ package constants;
 
 public final class CONSTANTS {
 
-    public static final String NODE_SERVER_URL = "http://10.0.2.2:3000/ws";
+    public static final String NODE_SERVER_URL = "http://ec2-18-217-228-61.us-east-2.compute.amazonaws.com:3000/ws";
+    //public static final String NODE_SERVER_URL = "http://10.0.2.2:3000/ws";
 
 
     public static final String HOME_STATUS_ENDPOINT = "/mobile/home-status";
